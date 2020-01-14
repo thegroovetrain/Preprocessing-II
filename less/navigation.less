@@ -1,1 +1,32 @@
 // Navigation Styles here
+
+.c-masthead {
+    border-bottom: dashed 2px @navigation-border;
+    padding: 1.5rem 0;
+
+    &__container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        @media @mobile {
+            flex-direction: column;
+        }
+    }
+}
+
+.c-topnav {
+    display: flex;
+
+    @media @mobile {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    &__link {
+        color: @font-color;
+        font-size: 1.6rem;
+        padding: 0 1.5rem;
+        text-decoration: none;
+    }
+}
